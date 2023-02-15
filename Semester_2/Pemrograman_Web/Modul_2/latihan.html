@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Latihan</title>
+    <title>Latihan Modul 2</title>
 </head>
 <body>
     <!-- Untuk berpindah ke halaman lain di dalam satu tab -->
     <a href="latihan2.html">Klik di sini (tab sama)</a>
     <br>
+    
     <!-- Penambahan target blank untuk berpindah ke halaman lain dengan membuka tab lain -->
     <a href="latihan2.html" target="_blank" title="title link">Klik di sini (tab berbeda)</a>
     <br>
-    <!-- Untuk berpindah ke bab atau bagian dalam halaman menggunakan # -->
+    
+    <!-- Untuk berpindah ke bab atau bagian dalam halaman menggunakan # sebagai id -->
     Bab di Halaman Ini:
     <ul>
         <li><a href="#pendahuluan">Pendahuluan</a></li>
@@ -42,14 +44,58 @@
         Duis sit amet sem in erat viverra ultrices scelerisque in tortor.
     </p>
     <br>
+    
     <!-- Link menuju email dengan href="mailto: " -->
     <a href="mailto: traviszusa.2022@student.uny.ac.id">Pengiriman Email UNY</a>
     <br>
-    <!-- Link menuju alamat web melalui gambar -->
+    
+    <!-- Link menuju alamat web melalui gambar dengan sumber gambar di antara tag <a> -->
     <a href="https://k-on.fandom.com/wiki/Yui_Hirasawa" title="Yui Fandom Web">
     <img src="yui.jpg" border="0">
     </a>
     <br>
-    <!--  -->
+    
+    <!--Membuat tabel menggunakan tag <table> dengan border 1, tata letak tengah, spasi antar sel 0,
+        dan spasi antar border 10 -->
+    <table border="1" align="center" cellspacing="0" cellpadding="10">
+        
+        <!-- Judul atau penjelasan tabel -->
+        <caption>Tabel Member K-On!</caption>
+        
+        <!-- Header -->
+        <tr>
+            <!-- Penggunaan style width untuk mengatur lebar sel -->
+            <th width="50">No</th>
+            <th width="100">Member</th>
+            <th width="150">Posisi</th>
+            <!-- Penggabungan kolom menggunakan colspan sejumlah 2 kolom -->
+            <th width="150" colspan="2">Kelahiran dan Brand Musik</th>
+        </tr>
+
+        <!-- Baris tabel pertama -->
+        <tr>
+            <td>1</td>
+            <td>Yui</td>
+            <!-- Penggabungan baris menggunakan rowspan sejumlah 2 baris -->
+            <td rowspan="2">Gitaris</td>
+            <td>1991</td>
+            <td>Gibson</td>
+        </tr>
+
+        <!-- Baris tabel kedua -->
+        <tr>
+            <td>2</td>
+            <td>Azunyan</td>
+            <td rowspan="2">1992</td>
+            <td rowspan="2">Fender</td>
+        </tr>
+
+        <!-- Baris tabel ketiga -->
+        <tr>
+            <td>3</td>
+            <td>Mio</td>
+            <td>Bassist</td>
+        </tr>
+    </table>
 </body>
 </html>
