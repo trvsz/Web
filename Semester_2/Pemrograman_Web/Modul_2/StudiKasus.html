@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Membuat judul halaman -->
     <title>Studi Kasus</title>
+    <!-- Membuat Style -->
     <style>
+        /* Style untuk tag table dengan border atas dan bawah solid berwarna hitam */
         table {
             border-top: #000 solid;
             border-bottom: #000 solid;
         }
+        /* Sytle untuk th serta class .b untuk border bawah berwarna hitam solid */
         th, .b {
             border-bottom: #000 solid;
         }
+        /* Style untuk class .l untuk border kiri berwarna hitam solid */
         .l {
             border-left: #000 solid;
         }
+        /* Style untuk class .lb untuk border kiri dan bawah berwarna hitam solid */
         .lb {
             border-left: #000 solid;
             border-bottom: #000 solid;
         }
+        /* Style untuk class .r untuk border kanan berwarna hitam solid */
         td {
             text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Style dalam tag table untuk menghilangkan border, tata letak tengah,
+    spasi antar sel, dan cellpadding -->
     <table border="0" align="center" cellspacing="0" cellpadding="10">
-        <br>
+        <!-- Membuat caption tabel serta membuat tulisannya bold -->
         <caption><strong>PERBANDINGAN FITUR</strong></caption>
+        <!-- Baris pertama (Header) -->
         <tr>
             <th>No</th>
+            <!-- Menggunakan pemanggilan style yang telah dibuat bagian head (class="") -->
+            <!-- Mengatur lebar kolom "Fitur" menggunakan style width -->
             <th class="l" width="150">Fitur</th>
             <th class="l">Pemenang</th>
             <th class="l">Intel</th>
@@ -35,6 +47,8 @@
         </tr>
         <tr>
             <td>1</td>
+            <!-- Menggunakan class .l untuk membuat bagian kiri memiliki border 
+            berwarna hitam solid -->
             <td class="l">Harga dan Nilai</td>
             <td class="l">Intel</td>
             <td class="l">✓</td>
@@ -60,7 +74,11 @@
             <td>✓</td>
         </tr>
         <tr>
+            <!-- Menggunakan class .b untuk membuat bagian bawah memiliki border
+            berwarna hitam solid -->
             <td class="b">5</td>
+            <!-- Menggunakan class .lb untuk membuat bagian kiri dan bawah memiliki
+            border hitam solid -->
             <td class="lb">Spesifikasi</td>
             <td class="lb">Intel</td>
             <td class="lb">✓</td>
