@@ -4,34 +4,49 @@
     <title>Latihan Modul 3</title>
 </head>
 <body>
+    <!-- Pembuatan form menggunakan tag <form> -->
     <form action="" method="post">
         <table border="0">
+            <!-- Baris pertama -->
             <tr>
                 <td>Nama Lengkap:</td>
+                <!-- placehorder berfungsi untuk memberi keterangan pada kotak input -->
                 <td><input type="text" name="nama" placeholder="Masukkan Nama Lengkap" required></td>
             </tr>
+            <!-- Baris kedua -->
             <tr>
                 <td>Username:</td>
+                <!-- Required sebagai tanda bahwa input wajib diisi -->
                 <td><input type="text" name="uname" placeholder="Masukkan Username" required></td>
             </tr>
+            <!-- Baris ketiga -->
             <tr>
                 <td>Password:</td>
+                <!-- tipe password hanya berfungsi sebagai input tidak terlihat atau disamarkan -->
                 <td><input type="password" name="pass" placeholder="Masukkan Password" required></td>
             </tr>
+            <!-- Baris keempat -->
             <tr>
                 <td>Tanggal Lahir:</td>
+                <!-- tipe date untuk input tanggal -->
                 <td><input type="date" name="tl" required></td>
             </tr>
+            <!-- Baris kelima -->
             <tr>
                 <td>Email:</td>
+                <!-- tipe email untuk input email -->
                 <td><input type="email" name="email" placeholder="Masukkan Alamat E-mail" required></td>
             </tr>
+            <!-- Baris keenam -->
             <tr>
                 <td>Telepon:</td>
+                <!-- pattern berfungsi untuk mensortir jenis yang bisa diinputkan -->
                 <td><input type="text" pattern="[0-9]{12}" name="telp" maxlength="12" placeholder="Masukkan Nomor Telepon" required></td>
             </tr>
+            <!-- Baris ketujuh -->
             <tr>
                 <td></td>
+                <!-- tipe submit untuk mengirimkan data yang telah diinputkan -->
                 <td><input type="submit" value="Buat Akun Saya"></td>
             </tr>
         </table>

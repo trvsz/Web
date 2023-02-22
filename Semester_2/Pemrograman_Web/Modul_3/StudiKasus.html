@@ -4,31 +4,38 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Judul -->
     <h2>Studi Kasus: Validasi Input HTML5</h1>
     <form action="" method="post">
         <table>
             <tr>
                 <td>Nama</td>
+                <!-- Input untuk nama dengan jenis input hanya menerima huruf serta spasi dengan keterangan wajib diisi -->
                 <td>:<input type="text" name="nama" pattern="[A-Za-z ]+" placeholder="Isikan Nama Lengkap Anda" required></td>
             </tr>
             <tr>
                 <td>Usia</td>
-                <td>:<input type="number" name="age" size="2" min="17" max="30" required> (Usia min 17 - 30)</td>
+                <!-- Input untuk usia dengan jenis input hanya menerima angka dengan keterangan wajib diisi -->
+                <td>:<input type="number" name="age" min="17" max="30" required> (Usia min 17 - 30)</td>
             </tr>
             <tr>
                 <td>Email</td>
+                <!-- Input untuk email dengan jenis input hanya menerima email (@) dengan keterangan wajib diisi -->
                 <td>:<input type="email" name="email" placeholder="nama_email@host.com" required></td>
             </tr>
             <tr>
                 <td>Web</td>
+                <!-- Input untuk web dengan jenis input hanya menerima url dengan keterangan wajib diisi -->
                 <td>:<input type="url" name="web" pattern="http?://" placeholder="http://" required></td>
             </tr>
             <tr>
                 <td>Password</td>
+                <!-- Input untuk password dengan jenis input minimal 8 karakter dengan keterangan wajib diisi -->
                 <td>:<input type="password" name="pass" minlength="8" placeholder="Semua karakter, min 8" required></td>
             </tr>
             <tr>
                 <td></td>
+                <!-- Input untuk submit -->
                 <td>&nbsp;<input type="submit" value="Submit"></td>
             </tr>
         </table>
