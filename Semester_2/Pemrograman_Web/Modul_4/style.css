@@ -1,0 +1,148 @@
+.style3 {
+    color: red;
+    font-style: italic;
+}
+#style4 {
+    color: blue;
+    font-weight: bold;
+}
+
+/* STYLE FONT */
+.style_font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+    line-height: 36px;
+}
+
+/* STYLE BORDER & PADDING */
+/* Border dengan garis tidak putus-putus */
+.border1 {
+    border: 2px solid red;
+    /* Padding: semua */
+    padding: 10px;
+}
+/* Border dengan garis putus-putus */
+.border2 {
+    border: 2px dashed red;
+    /* Padding: atas kanan bawah kiri */
+    padding: 20px 10px 5px 40px;
+}
+/* Border dengan titik putus-putus */
+.border3 {
+    border: 2px dotted red;
+}
+
+/* STYLE LIST */
+#leftmenu ul {
+    width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#leftmenu a:link, #leftmenu a:visited, #leftmenu a:active {
+    padding-left: 15px;
+    text-decoration: none;
+}
+#leftmenu a {
+    padding: 5px 0px 5px 15px;
+    display: block;
+    background: #6cae15 no-repeat left center;
+    margin: 0px 0px 1px;
+    color: #fff;
+}
+#leftmenu a:hover {
+    background: #5e9711 no-repeat left center;
+    color: #fff;
+}
+
+/* STYLE DIV */
+/* Ukuran Area */
+.box1 {
+    width: 200px;
+    height: 50px;
+    background: grey;
+    border: 1px solid red;
+}
+.box2 {
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 100px;
+    border: 1px solid red;
+}
+/* Posisi */
+.box3 {
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: grey;
+    border: 1px solid red;
+}
+.box4 {
+    float: right;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+}
+.box5 {
+    /* me-reset pengaturan float left maupun right */
+    clear: both;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: grey;
+    border: 1px solid red;
+}
+
+/* BORDER */
+.round {
+    background-color: #ddccb5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 2px solid #897048;
+    padding: 10px;
+    width: 310px;
+}
+
+/* STUDI KASUS */
+.lingkaran {
+    background-color: bisque;
+    border: 2px solid #897048;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+.lingkaran2{
+    background-color: bisque;
+    border: 2px solid #897048;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+.border_lengkung {
+    border: 5px solid #5e9711;
+    padding: 10px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.border_shadow {
+    border: 1px solid #888;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 10px 10px 5px #888;
+}
