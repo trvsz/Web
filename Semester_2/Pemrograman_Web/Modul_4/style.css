@@ -110,7 +110,8 @@
 }
 
 /* STUDI KASUS */
-.lingkaran {
+/* Lingkaran Metode 1 */
+.lingkaran { 
     background-color: bisque;
     border: 2px solid #897048;
     -moz-border-radius: 200px;
@@ -122,6 +123,7 @@
     height: 200px;
     width: 200px;
 }
+/* Lingkaran Metode 2 */
 .lingkaran2{
     background-color: bisque;
     border: 2px solid #897048;
@@ -141,7 +143,7 @@
     border-bottom-right-radius: 20px;
 }
 .border_shadow {
-    border: 1px solid #888;
+    border: 2px solid #888;
     padding: 10px;
     width: 300px;
     box-shadow: 10px 10px 5px #888;
