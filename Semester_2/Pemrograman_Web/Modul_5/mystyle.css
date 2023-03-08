@@ -1,20 +1,24 @@
+/* Style untuk id wrapper */
 #wrapper {
     margin: auto;
     width: 750px;
     border: 1px solid red;
 }
 
+/* Style untuk id header */
 #header {
     height: 80px;
     border: 1px solid blue;
 }
 
+/* Style untuk id nav */
 #inner {
     float: left;
     margin: 5px 0;
     border: 1px solid black;
 }
 
+/* Style untuk id nav */
 #sidebar {
     float: left;
     margin-right: 20px;
@@ -23,6 +27,7 @@
     border: 1px solid red;
 }
 
+/* Style untuk id content */
 #content {
     float: left;
     width: 544px;
@@ -30,6 +35,7 @@
     border: 1px solid green;
 }
 
+/* Style untuk id footer */
 #footer {
     clear: both;
     height: 50px;

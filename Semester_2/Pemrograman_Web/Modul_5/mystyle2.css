@@ -1,29 +1,35 @@
+/* Style untuk tag body */
 body {
     margin: 10px auto;
     width: 750px;
 }
 
+/* Style untuk tag header, nav, section, footer */
 header, nav, section, footer {
     display: block;
     border: 1px solid blue;
 }
 
+/* Style tambahan untuk tag header */
 header {
     height: 80px;
 }
 
+/* Style tambahan untuk tag nav */
 nav {
     float: left;
     width: 200px;
     height: 370px;
 }
 
+/* Style tambahan untuk tag section */
 section {
     margin-left: 200px;
     width: 500;
     height: 370px;
 }
 
+/* Style tambahan untuk tag footer */
 footer {
     clear: both;
     height: 20px;
