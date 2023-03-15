@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 1 Modul 6</title>
+    <style>
+        /* Pengaturan default display none */
+        .smartphone {
+            display: none;
+        }
+        /* Media query untuk smartphone 375px */
+        /* Warna background akan berubah menjadi kuning
+           saat layar < 375px */
+        @media only screen and (max-width: 375px) {
+            body {
+                background-color: yellow;
+            }
+            .smartphone {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Menggunakan Media Query CSS3</h3>
+    <div>
+        <h2>Terdeteksi ukuran smartphone</h2>
+    </div>
+</body>
+</html>

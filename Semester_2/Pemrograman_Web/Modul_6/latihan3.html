@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 3 Modul 6</title>
+    <style>
+        /* Kondisi Box Awal */
+        .box {
+            width: 40%;
+            height: 100px;
+            background: orange;
+            border: 2px solid #212121;
+            /* Animasi Lebar Box */
+            /* Box akan memiliki animasi selama 1 detik 
+               dengan mengatur sesuai pixel layar */
+            -webkit-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            transition: width 1s ease-in-out;
+        }
+        /* Jika Landscape, perlebar 100%0 */
+        @media (orientation: landscape) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Transisi CSS3</h3>
+    <div class="box"></div>
+    <p>
+        Ubah orientasi ek landscape/potrait dan sebaliknya
+        untuk melihat efek treansisi
+    </p>
+</body>
+</html>
