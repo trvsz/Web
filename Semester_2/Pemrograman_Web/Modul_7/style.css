@@ -1,7 +1,9 @@
+/* Font Website */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Scroll Website */
 body {
     height: 100%;
     width: 100%;
@@ -9,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Video Background */
 video {
     object-fit: cover;
     position: fixed;
@@ -17,18 +20,6 @@ video {
     height: 100%;
     width: 100%;
 }
-
-.brand {
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
-
-.logo {
-    width: 100px;
-    margin-left: 20px;
-}
-
 .video-wrapper {
     overflow: hidden;
     display: flex;
@@ -36,11 +27,24 @@ video {
     justify-content: center;
 }
 
+/* Logo */
+.brand {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Ketinggian Card */
 .vertical-center {
     top: 2%;
     transform: translateY(2%);
 }
 
+/* Header Card */
 .header h1 {
     font-size: 1.55rem;
     font-weight: 700;
@@ -48,7 +52,6 @@ video {
     margin-top: 60px;
     margin-bottom: 50px;
 }
-
 .header a {
     font-size: 0.65rem;
     font-weight: bold;
@@ -57,6 +60,7 @@ video {
     text-decoration: none;
 }
 
+/* Padding Username & Password Form */
 .usps {
     padding-left: 50px;
     padding-right: 50px;
@@ -71,24 +75,27 @@ video {
     font-size: 0.65rem;
 }
 
+/* Stay Sign In */
 .ssi {
     padding-top: 10px;
     margin-top: 10px;
     font-size: 0.75rem;
 }
 
+/* Stay Sign In Sejajar */
 .ssi input {
     vertical-align: middle;
 }
-
 .ssi label {
     vertical-align: middle;
 }
 
+/* Button Auth */
 .login button {
     margin-top: 20px;
 }
 
+/* Cant Sign In & Create Account */
 .link p {
     text-decoration: none;
     color: black;
@@ -97,22 +104,22 @@ video {
     font-weight: bold;
     margin: 0px;
 }
-
 .link a {
     text-decoration: none;
 }
 
+/* Spaing Cant Sign In & Create Account */
 .end {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+/* Button Utama Sign In */
 input[type=button] {
     margin-top: 30px;
     width: 75px;
     height: 75px;
 }
-
 .bg-input {
     background-image: url("https://image.pngaaa.com/660/613660-middle.png");
     border: none;
@@ -122,6 +129,7 @@ input[type=button] {
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
     bottom: 0px;
     margin-left: 20px;
@@ -130,12 +138,14 @@ footer {
     height: 1px;
 }
 
+/* Copyright */
 footer p {
     margin-left: 10px;
     font-size: 0.45rem;
     padding-bottom: 20px;
 }
 
+/* Navbar Item Text */
 li b {
     color: white;
     font-size: 0.65rem;
