@@ -1,0 +1,142 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.brand {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.video-wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-center {
+    top: 2%;
+    transform: translateY(2%);
+}
+
+.header h1 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.header a {
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.usps {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.usps input {
+    background-color: #ededed;
+}
+
+::placeholder {
+    font-weight: bold;
+    font-size: 0.65rem;
+}
+
+.ssi {
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 0.75rem;
+}
+
+.ssi input {
+    vertical-align: middle;
+}
+
+.ssi label {
+    vertical-align: middle;
+}
+
+.login button {
+    margin-top: 20px;
+}
+
+.link p {
+    text-decoration: none;
+    color: black;
+    font-size: 0.65rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.end {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type=button] {
+    margin-top: 30px;
+    width: 75px;
+    height: 75px;
+}
+
+.bg-input {
+    background-image: url("https://image.pngaaa.com/660/613660-middle.png");
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85px 75px;
+    border-radius: 5px;
+}
+
+footer {
+    bottom: 0px;
+    margin-left: 20px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+}
+
+footer p {
+    margin-left: 10px;
+    font-size: 0.45rem;
+    padding-bottom: 20px;
+}
+
+li b {
+    color: white;
+    font-size: 0.65rem;
+}
