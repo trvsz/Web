@@ -16,32 +16,38 @@
         crossorigin="anonymous">
     </script>
     
-    <title>Document</title>
+    <title>Login Page</title>
 
+    <!-- Script JS -->
     <script>
+        // Fungsi untuk validasi form
         function validateForm() {
+            // Mengambil nilai dari inputan username dan password
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
-            if (username == "" || password == "") {
-                alert("ID/Username dan Password harus diisi.");
-                document.getElementById("username").focus();
-                document.getElementById("username").select();
-                return false;
+            // Validasi inputan username dan password
+            if (username == "" || password == "") { // Jika username dan password kosong
+                alert("ID/Username dan Password harus diisi."); // Munculkan pesan
+                document.getElementById("username").focus(); // Fokus ke inputan username
+                document.getElementById("username").select(); // Pilih semua teks yang ada di inputan username
+                return false; // Menghentikan proses submit
             }
-            if (!/^[a-zA-Z]+$/.test(username) || !/^[a-zA-Z]+$/.test(password)) {
-                alert("ID/Username dan Password harus berupa huruf.");
-                document.getElementById("username").focus();
-                document.getElementById("username").select();
-                return false;
+            if (!/^[a-zA-Z]+$/.test(username) || !/^[a-zA-Z]+$/.test(password)) { // Jika username dan password tidak berupa huruf
+                alert("ID/Username dan Password harus berupa huruf."); // Munculkan pesan
+                document.getElementById("username").focus(); // Fokus ke inputan username
+                document.getElementById("username").select(); // Pilih semua teks yang ada di inputan username
+                return false; // Menghentikan proses submit
             }
-            return true;
+            return true; // Mengembalikan nilai true
         }
     </script>
 </head>
 <body>
+    <!-- Form HTML sederhana -->
     <div class="container text-center col-12 col-md-8 col-lg-3">
         <div class="card" style="margin-top: 20%; margin-bottom: 50px;">
             <h1 style="margin-top: 20px; margin-bottom: 15px;">SIGN IN</h1>
+            <!-- Form dikaitkan dengan PHP dan JS sebagai penyaring input maupun hasil dari input-->
             <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" onsubmit="return validateForm()">
                 <div class="container text-center">
                     <div>
@@ -56,11 +62,16 @@
         </div>
     </div>
     
+    <!-- PHP -->
     <?php
-        if (isset($_POST['nama']) || isset($_POST['password'])) {
+        // jika form sudah diisi
+        if (isset($_POST['nama']) || isset($_POST['password'])) { 
+            // jika username dan password sesuai dengan yang ditentukan
             if ($_POST['username'] === "admin" && $_POST['password'] === "admin") {
+                // tampilkan pesan login berhasil
                 echo "<p align=center> <font color=green size=5px> Selamat Datang, " . $_POST['username'] . "!";
-            } else {
+            } else { // jika username dan password tidak sesuai dengan yang ditentukan
+                // tampilkan pesan login gagal
                 echo "<p align=center> <font color=red size=5px> Login gagal. ID/Username atau Password salah.";
             }
         }
