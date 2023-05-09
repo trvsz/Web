@@ -6,16 +6,17 @@
         unset($_SESSION);
         session_destroy();
         echo "<p align=center> <font color=green size=5px> Anda berhasil Log Out.";
-        echo "<p align=center> <font color=green size=5px> Redirecting to login page...";
-        header('Refresh:3 ; URL=StudiKasus.php');
+        echo "<p align=center> <font color=green si ze=5px> Redirecting to login page...";
+        header('Refresh:2 ; URL=StudiKasus.php');
         exit;
     }
     // jika form sudah diisi
     if (isset($_POST['nama']) || isset($_POST['password'])) { 
         // jika username dan password sesuai dengan yang ditentukan
         if ($_POST['username'] === "admin" && $_POST['password'] === "admin") {
+            $_SESSION['masuk'] = $_POST['username'];
             // masuk ke halaman login page
-            if (!isset($_SESSION['masuk'])) { ?>
+            if (isset($_SESSION['masuk'])) { ?>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">
@@ -31,7 +32,6 @@
                         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
                         crossorigin="anonymous">
                     </script>
-                    
                     <title>Home Page</title>
                 </head>
                 <body>
@@ -60,11 +60,14 @@
                     </nav>
                 </body>
                 </html> <?php
+            } else { 
+                die("Anda belum login! Anda tidak berhak masuk ke halaman ini. Silahkan login <a href='StudiKasus.php'>di sini</a>"); // jika belum login jangan melanjutkan
             }
         } else { // jika username dan password tidak sesuai dengan yang ditentukan
             // tampilkan pesan login gagal
             echo "<p align=center> <font color=red size=5px> Login gagal. ID/Username atau Password salah.";
-            echo "<p align=center> <font color=red size=5px> Silahkan <a href='StudiKasus.php'>login</a> kembali.</font></p>";
+            echo "<p align=center> <font color=green size=5px> Redirecting to login page...";
+            header('Refresh:2 ; URL=StudiKasus.php');
         }
     } else { ?>
         <html lang="en">
