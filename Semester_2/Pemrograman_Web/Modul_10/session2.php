@@ -5,6 +5,6 @@
         echo "<h2>Beranda</h2>";
         echo "<p><a href='session3.php'>Log Out</a></p>";
     } else {
-        die("Anda belum login! Anda tidak berhak masuk ke halaman ini. Silahkan login <a href='session1.php'>di sini</a>");
+        die("Anda belum login! Anda tidak berhak masuk ke halaman ini. Silahkan login <a href='session1.php'>di sini</a>"); // jika belum login jangan lanjut
     }
 ?>
