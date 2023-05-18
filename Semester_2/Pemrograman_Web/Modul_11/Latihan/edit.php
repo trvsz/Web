@@ -20,8 +20,8 @@
 
     <?php
         include "koneksi.php";
-        $id = $_GET['id'];
-        $data = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE id='$id'") or die(mysqli_error($koneksi));
+        $nim = $_GET['nim'];
+        $data = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE nim='$nim'") or die(mysqli_error($koneksi));
         $no = 1;
         while($d = mysqli_fetch_array($data)){
     ?>

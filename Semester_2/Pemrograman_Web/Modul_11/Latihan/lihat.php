@@ -14,10 +14,10 @@
     <br>
     <?php
         include "koneksi.php";
-        $id = $_GET['id'];
-        $query_mysql = mysqli_query($koneksi, "SELECT * FROM user WHERE id='$id'");
+        $nim = $_GET['nim'];
+        $data = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE nim='$nim'");
         $no = 1;
-        while($data = mysqli_fetch_array($query_mysql)){
+        while($d = mysqli_fetch_array($data)){
     ?>
         <table>
             <tr>
