@@ -65,7 +65,7 @@
     <!-- PHP -->
     <?php
         // jika form sudah diisi
-        if (isset($_POST['nama']) || isset($_POST['password'])) { 
+        if (isset($_POST['username']) || isset($_POST['password'])) { 
             // jika username dan password sesuai dengan yang ditentukan
             if ($_POST['username'] === "admin" && $_POST['password'] === "admin") {
                 // tampilkan pesan login berhasil
