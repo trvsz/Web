@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(https://wallpapercave.com/wp/wp8629994.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-add-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 140px;
+}
+
+.container-custom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-view-edit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.box-login {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: center;
+    padding: 10px;
+    width: 350px;
+}
+
+.box-view {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: center;
+    padding: 10px;
+    width: 500px;
+}
+
+.box-table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: center;
+    padding: 10px;
+    width: 1000px;
+}
+
+.container-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-wrapper-data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.alert-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+input[readonly] {
+    background-color: #fff !important;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .container-view-edit {
+        margin-top: 40px !important;
+    }
+    .container-add-data {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+    }
+    .nav-link {
+        font-size: 14px !important;
+    }
+}
