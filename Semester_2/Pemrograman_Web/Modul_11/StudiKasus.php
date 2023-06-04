@@ -239,7 +239,7 @@
                         <td><?= $data['nama'] ?></td>
                         <td><?= $data['alamat'] ?></td>
                         <td>
-                            <div class="flex">
+                            <div class="d-flex">
                                 <form action="" method="post">
                                     <input type="hidden" name="id" value="<?= $data['id'] ?>">
                                     <button class="btn btn-primary" type="submit" name="edit">
