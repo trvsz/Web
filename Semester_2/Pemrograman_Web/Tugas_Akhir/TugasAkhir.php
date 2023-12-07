@@ -7,7 +7,7 @@
     $host = "localhost";
     $database = "db_universitas";
     $username = "root";
-    $password = "";
+    $password = "root";
     $connect = mysqli_connect($host, $username, $password, $database);
 
     // Cek koneksi
@@ -27,10 +27,10 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         $query = "SELECT * FROM tb_user WHERE username = '$username' AND password = '$password'";
-        $result = mysqli_query($connect, $query); 
+        $result = mysqli_query($connect, $query); // Menjalankan query
         
         // Cek username dan password
-        if (mysqli_num_rows($result) == 1) {
+        if (mysqli_num_rows($result) == 1) { // Jumlah baris yang dihasilkan dari query
             $data = mysqli_fetch_array($result);
             $_SESSION['username'] = $username;
             $route = "home_page";
@@ -56,8 +56,8 @@
         $confirm_password = $_POST['confirm_password'];
         $query = "SELECT COUNT(*) AS total FROM tb_user WHERE username = '$username'";
         $result = mysqli_query($connect, $query);
-        $row = mysqli_fetch_assoc($result);
-        $total = $row['total'];
+        $row = mysqli_fetch_assoc($result); // Mengambil data dari database
+        $total = $row['total']; // Mengambil data total dari database
         // Cek kesamaan username dalam database
         if ($total > 0) {
             $message = (object) [
@@ -80,13 +80,13 @@
             if ($result) {
                 $message = (object) [
                     "type" => "success",
-                    "text" => "Data BERHASIL Ditambahkan"
+                    "text" => "Akun BERHASIL Dibuat"
                 ];
             // Jika data gagal ditambahkan
             } else {
                 $message = (object) [
                     "type" => "danger",
-                    "text" => "Data GAGAL Ditambahkan"
+                    "text" => "Akun GAGAL Dibuat"
                 ];
             }
             $route = "login_page";
@@ -160,6 +160,7 @@
         $jabatan = $_POST['jabatan'];
         $status = $_POST['status'];
         $email = $_POST['email'];
+    
         // Cek kesamaan NIP dalam database
         $existingNIPQuery = "SELECT COUNT(*) AS total FROM tb_dosen WHERE nip = '$nip'";
         $existingNIPResult = mysqli_query($connect, $existingNIPQuery);
@@ -296,7 +297,7 @@
         crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTugasAkhir.css">
     
     <!-- DataTable -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
